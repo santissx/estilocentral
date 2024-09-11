@@ -1,0 +1,96 @@
+.navbar {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    width: 100vw;
+    padding: 0 2rem;
+    background-color: #150A26;
+    color: white;
+}
+
+.logo {
+    flex-basis: 8%; /* Ocupa un % del ancho total */
+}
+.imglogo{
+    flex-basis: 8%;
+    height: 5vh;
+}
+/* Menu de navegación (items) */
+.menu-items {
+    
+    flex-basis: 50%; /* Ocupa un 40% del ancho total */
+    display: flex;
+    justify-content: space-around; /* Distribuye equitativamente los enlaces */
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+}
+.menu-items a {
+    margin-right: 7vw; /* Añade margen entre los enlaces si es necesario */
+}
+
+/* Barra de búsqueda centrada */
+.search-bar {
+    flex-basis: 20%; /* Ocupa un 20% del ancho total */
+}
+
+.search-bar input {
+    height: 4vh;
+    width: 60%; /* Asegura que el buscador ocupe todo el espacio disponible */
+    border-radius: 1vw;
+    border: 1vw;
+}
+
+/* Perfil de usuario a la derecha */
+.user-profile {
+    flex-basis: 12%; /* Ocupa un 15% del ancho total */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-pic {
+    flex-basis: 8%;
+    height: 5vh;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.user-profile a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.nomusu{
+        color: white;  
+        }
+
+footer{
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    text-align: center; 
+    width: 100vw;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Alinea el texto y los enlaces en columna */
+    align-items: center;    
+    width: 100%;
+    
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between; /* Distribuye los enlaces equitativamente */
+    width: 50%;                   /* Asegura que ocupe el 100% del ancho disponible */
+}
+
+.contenido{
+    height: 84vh;
+    
+}
