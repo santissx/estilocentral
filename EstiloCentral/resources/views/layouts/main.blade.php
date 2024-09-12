@@ -11,21 +11,22 @@
     </style>
      <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+        @stack('styles')
+      </head>
 <body>
     <section name="navbar"> 
       <div class="navbar">
-        <div class="logo"> <img src="{{ asset('imagenes/logo.png') }}" alt="LOGO" class="imglogo"></div>
+        <div class="logo">  <a href="{{ route('inicio') }}"><img src="{{ asset('imagenes/logo.png') }}" alt="LOGO" class="imglogo"></a></div>
         <div class="menu-items">
             <a href="#">Locales</a>
             <a href="#">Hombres</a>
             <a href="#">Mujeres</a>
-            <a href="#">Niñxs</a>
-            <a href="#">Niñxs</a>
+            <a href="#">Niños/as</a>
+            <a href="#">Estilos</a>
         </div>
         <div class="search-bar">
           <form action="get">
-            <input type="text" placeholder="Buscar...">
+            <input type="text" placeholder="Encuentra tu tienda">
           </form>
         </div>
         <div class="user-profile">
@@ -38,7 +39,7 @@
     </section>
    
    
-    <div class="container contenido">
+    <div class=" contenido">
       @yield('content')
     </div>
   

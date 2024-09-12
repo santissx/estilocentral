@@ -92,5 +92,8 @@ footer{
 
 .contenido{
     height: 84vh;
-    
+    background-color: #150A26;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
