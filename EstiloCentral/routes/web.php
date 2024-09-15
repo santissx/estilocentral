@@ -14,4 +14,7 @@ Route::get('/app', function () {
 Route::get('/locales', function () {
     return view('locales');
 }) ->name('locales');
+Route::get('/locales-minimal', function () {
+    return view('minimal');
+}) ->name('minimal');
 ?>

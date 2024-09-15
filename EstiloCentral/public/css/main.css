@@ -1,5 +1,12 @@
-.navbar {
-   
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Fuentes para encabezados y enlaces del navbar */
+h1, h2, h3, h4, h5, h6, .menu-items a, .footer-content p {
+    font-family: 'Merriweather', serif;
+}
+.navbar {  
     display: flex;
     justify-content: space-between;
     align-items: center;
