@@ -1,0 +1,168 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel {
+    width: 100vh;
+    height: 40vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    text-align: center;
+    border-radius: 1vw;
+    display: flex;  
+    justify-content: center;
+    overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+    position: relative; /* Necesario para el posicionamiento absoluto de .card_text */
+}
+
+.carousel img {
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+
+}
+
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Separación entre las tarjetas */
+}
+
+.category-item {
+    text-align: center;
+    color: white; /* Color blanco para el texto */
+}
+
+.category-item img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+p {
+    color: white; /* Texto blanco */
+}
+
+nav {
+    z-index: 1000; /* Asegura que el nav esté siempre encima del carrusel */
+    position: relative;
+}
+
+footer {
+    z-index: 1000; /* Asegura que el footer esté siempre encima del carrusel */
+    position: relative;
+}
+
+.logo {
+    flex-basis: 8%; /* Ocupa un % del ancho total */
+}
+.imglogo{
+    flex-basis: 8%;
+    height: 5vh;
+}
+/* Menu de navegación (items) */
+.menu-items {
+    
+    flex-basis: 40%; /* Ocupa un 40% del ancho total */
+    display: flex;
+    justify-content: space-around; /* Distribuye equitativamente los enlaces */
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+}
+.menu-items a {
+    margin-right: 5vw; /* Añade margen entre los enlaces si es necesario */
+}
+
+/* Barra de búsqueda centrada */
+.search-bar {
+    flex-basis: 20%; /* Ocupa un 20% del ancho total */
+}
+
+.search-bar input {
+    height: 4vh;
+    width: 60%; /* Asegura que el buscador ocupe todo el espacio disponible */
+    border-radius: 1vw;
+    border: 1vw;
+}
+
+/* Perfil de usuario a la derecha */
+.user-profile {
+    flex-basis: 12%; /* Ocupa un 15% del ancho total */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-pic {
+    flex-basis: 8%;
+    height: 5vh;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.user-profile a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.nomusu{
+        color: white;  
+        }
+
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-between; /* Distribuye los enlaces equitativamente */
+    width: 50%;                   /* Asegura que ocupe el 100% del ancho disponible */
+}
+
+.contenido{
+    height: 84vh;
+    background-color: #150A26;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+footer{
+    height: 8vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+    text-align: center; 
+    width: 100vw;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Alinea el texto y los enlaces en columna */
+    align-items: center;    
+    width: 50%;
+    height: 150px;
+    
+}
+.carousel-inner {
+    height: 500px; /* Ajusta esta altura según sea necesario */
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    height: 100%;
+    width: 100%;
+}

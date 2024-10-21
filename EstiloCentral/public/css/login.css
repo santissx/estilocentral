@@ -1,0 +1,41 @@
+.card{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#image-container{
+    border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+}
+
+#login-title{
+    color: white;
+}
+
+.text-end a {
+    color: white; 
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra el contenido horizontalmente */
+    height: 100%;
+    text-align: center; 
+}
+
+.login-image{
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-purple-custom {
+    background: linear-gradient(135deg, #6a1b9a, #6f9af7);
+}
+.bg-brown-custom {
+    background: linear-gradient(135deg, rgb(36, 33, 32), rgb(117, 109, 103))
+}
